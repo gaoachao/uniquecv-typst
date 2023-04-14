@@ -10,7 +10,7 @@
 
 Typst提供了非常好用的webapp
 
-本模板链接：https://typst.app/project/p1sVlu8OxI122an3_UdDfG
+本模板链接：https://typst.app/project/rbDOb3W_-c4RhQkYNd30Eu
 
 ### 本地
 
