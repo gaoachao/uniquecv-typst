@@ -29,7 +29,7 @@ Typst提供了非常好用的webapp
 
 ### 效果
 
-![image-20230414165101307](/home/bitter-gourd/.config/Typora/typora-user-images/image-20230414165101307.png)
+![效果图](https://github.com/gaoachao/uniquecv-typst/raw/main/image.png)
 
 ## 友情链接
 
