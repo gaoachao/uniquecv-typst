@@ -17,6 +17,8 @@ Typst提供了非常好用的webapp
   - macOS/Linux: `brew install typst`
   - Arch Linux: `pacman -S typst`
 
+- 安装图标字体 fontawesome，参考 https://github.com/typst/packages/tree/main/packages/preview/fontawesome/0.1.0#install-the-fonts
+
 - clone本仓库
 
 - 编译（具体可参考[官方Usage](https://github.com/typst/typst)）
