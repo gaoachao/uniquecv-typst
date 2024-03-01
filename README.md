@@ -10,14 +10,14 @@
 
 Typst提供了非常好用的webapp
 
-本模板链接：https://typst.app/project/rbDOb3W_-c4RhQkYNd30Eu
-
 ### 本地
 
 - 安装Typst
 
   - macOS/Linux: `brew install typst`
   - Arch Linux: `pacman -S typst`
+
+- 安装图标字体 fontawesome，参考 https://github.com/typst/packages/tree/main/packages/preview/fontawesome/0.1.0#install-the-fonts
 
 - clone本仓库
 
