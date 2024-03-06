@@ -1,14 +1,16 @@
 # uniquecv-typst
 
 > 一个使用[Typst](https://typst.app/)编写的简历模板，基于[uniquecv](https://github.com/dyinnz/uniquecv)。
->
-> 由于搬运工苦瓜同学第一次接触Typst，语法/样式有诸多不合理的地方，欢迎指正。
+
 
 ## 使用
 
 ### 在线
 
-Typst提供了非常好用的webapp
+Typst提供了非常好用的 [webapp](https://typst.app) 
+- 创建 project 
+- 复制 main.typ 和 template.typ 到项目目录
+- 在线编译
 
 ### 本地
 
