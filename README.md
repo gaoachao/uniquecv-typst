@@ -1,6 +1,6 @@
 # uniquecv-typst
 
-> 一个使用[Typst](https://typst.app/)编写的简历模板，基于[uniquecv](https://github.com/dyinnz/uniquecv)。
+> 一个使用 [Typst](https://typst.app/) 编写的简历模板，基于 [uniquecv](https://github.com/dyinnz/uniquecv)
 
 
 ## 使用
@@ -14,16 +14,16 @@ Typst提供了非常好用的 [webapp](https://typst.app)
 
 ### 本地
 
-- 安装Typst
+- 安装 Typst
 
   - macOS/Linux: `brew install typst`
   - Arch Linux: `pacman -S typst`
 
-- 安装图标字体 fontawesome，参考 https://github.com/typst/packages/tree/main/packages/preview/fontawesome/0.1.0#install-the-fonts
+- 安装图标字体 fontawesome（可参考 [install-the-fonts](https://github.com/typst/packages/tree/main/packages/preview/fontawesome/0.1.0#install-the-fonts) ）
 
-- clone本仓库
+- clone 本仓库
 
-- 编译（具体可参考[官方Usage](https://github.com/typst/typst)）
+- 编译（可参考[官方 Usage ](https://github.com/typst/typst)）
 
   ```
   typst compile path/to/main.typ path/to/output.pdf
