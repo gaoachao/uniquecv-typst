@@ -18,7 +18,7 @@
   // 页边距设定
   set page(
     paper: "a4",
-    numbering: "1",
+    numbering: none,
     margin: (top: 2cm, bottom: 2.5cm, left: 2.5cm, right: 2.5cm),
   )
   set text(font: font-list, lang: "zh", region: "cn")
