@@ -65,6 +65,7 @@ C/C++、Rust、Typst、Vue、React、JavaScript、TypeScript、CSS、Golang、Li
 ), (
   name: [UniqueStudio--SSO],
   type: [团队项目],
+  link: [https://github.com/UniqueStudio/UniqueStudioSSOFrontEnd],
   tech: [golang、React、Typescript],
   date: [2022 年 06 月 -- 2022 年 09 月],
   description: [

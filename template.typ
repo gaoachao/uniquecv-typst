@@ -111,6 +111,11 @@
     cells.push(strong(exp.at("type", default: [])))
     cells.push(date-style(exp.at("date", default: [])))
     cells.push(colspanx(3, [
+      #if "link" in exp [
+        #show link: underline
+        #exp.link
+        #linebreak()
+      ]
       #if "tech" in exp [
         #emph(exp.tech)
         #linebreak()
