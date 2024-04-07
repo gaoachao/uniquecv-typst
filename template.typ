@@ -1,5 +1,4 @@
 #import "@preview/fontawesome:0.1.0" as fa
-#import "@preview/tablex:0.0.8": tablex, colspanx, rowspanx
 // 小标题的蓝色
 #let cv-blue = rgb(56, 115, 192)
 // 日期的灰色
@@ -12,7 +11,12 @@
 #let font-list = (en-font, cn-font)
 #let italic-font-list = (en-font, cn-italic-font)
 
-#let project(name: "", body) = {
+#let project(
+  name: "",
+  body,
+  font-list: font-list,
+  italic-font-list: italic-font-list,
+) = {
   // 标题
   set document(title: name)
   // 页边距设定
@@ -21,12 +25,22 @@
     numbering: none,
     margin: (top: 2cm, bottom: 2.5cm, left: 2.5cm, right: 2.5cm),
   )
-  set text(font: font-list, lang: "zh", region: "cn")
+  set text(
+    font: font-list,
+    lang: "zh",
+    region: "cn",
+  )
   
-  set par(justify: true, linebreaks: "optimized", leading: 0.8em) // 行间距
-  show par: set block(spacing: 1em) // 段间距
+  set par(
+    justify: true,
+    linebreaks: "optimized",
+    leading: 0.8em,
+  )
+  // 行间距
+  show par: set block(spacing: 1em)
+  // 段间距
   
-  show emph : it => [
+  show emph: it => [
     #set text(font: italic-font-list)
     #it
   ]
@@ -34,7 +48,7 @@
     #it
     #place(dy: 0.3em, left)[#line(length: 100%, stroke: 0.7pt + cv-blue)]
   ]
-  show heading : set block(spacing: 0.2em)
+  show heading: set block(spacing: 0.2em)
   // 设置标题（名字）字体
   align(center)[
     #block(text(weight: 400, 2.4em, name))
@@ -76,9 +90,9 @@
     #h(10pt)#major
     #h(10pt)#degree
     #h(1fr) #date-style(date)
-     
+    
     #grade
-    #h(10pt)#English 
+    #h(10pt)#English
   ]
   body
 }
@@ -102,7 +116,6 @@
   ]
 }
 
-
 // 项目经历
 #let proj-exps(exps) = {
   let cells = ()
@@ -110,20 +123,24 @@
     cells.push(strong(exp.at("name", default: [])))
     cells.push(strong(exp.at("type", default: [])))
     cells.push(date-style(exp.at("date", default: [])))
-    cells.push(colspanx(3, [
-      #if "tech" in exp [
-        #emph(exp.tech)
-        #linebreak()
-      ]
-      #exp.at("description", default: [])
-    ]))
-    cells.push(())
-    cells.push(())
+    cells.push(
+      table.cell(
+        colspan: 3,
+        [
+          #if "tech" in exp [
+            #emph(exp.tech)
+            #linebreak()
+          ]
+          #exp.at("description", default: [])
+        ],
+      ),
+    )
   }
   [
     #v(-0.4em)
-    #tablex(
-      columns: (1fr, 1fr, auto),
+    #table(
+      columns: (auto, 1fr, auto),
+      column-gutter: 1em,
       inset: (x: 0pt, y: 0.4em),
       stroke: none,
       ..cells,
