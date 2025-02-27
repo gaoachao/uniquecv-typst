@@ -1,4 +1,4 @@
-#import "@preview/fontawesome:0.1.0" as fa
+#import "@preview/fontawesome:0.5.0" as fa
 // 小标题的蓝色
 #let cv-blue = rgb(56, 115, 192)
 // 日期的灰色
@@ -34,10 +34,10 @@
   set par(
     justify: true,
     linebreaks: "optimized",
-    leading: 0.8em,
+    leading: 0.8em
   )
   // 行间距
-  show par: set block(spacing: 1em)
+  // show par: set block(spacing: 1em)
   // 段间距
   
   show emph: it => [
@@ -48,7 +48,7 @@
     #it
     #place(dy: 0.3em, left)[#line(length: 100%, stroke: 0.7pt + cv-blue)]
   ]
-  show heading: set block(spacing: 0.2em)
+  show heading: set block(spacing: 0.72em)
   // 设置标题（名字）字体
   align(center)[
     #block(text(weight: 400, 2.4em, name))
